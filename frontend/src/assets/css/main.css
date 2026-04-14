@@ -1,0 +1,46 @@
+:root {
+  --primary: #e91e8c;
+  --primary-light: #f8c8e4;
+  --primary-dark: #c2186e;
+  --secondary: #6f42c1;
+  --accent: #fd7e14;
+  --bg-soft: #fff5fa;
+}
+
+body { font-family: 'Sarabun', 'Noto Sans Thai', sans-serif; background: #f8f9fa; }
+
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover, .btn-primary:focus { background: var(--primary-dark); border-color: var(--primary-dark); }
+.btn-outline-primary { color: var(--primary); border-color: var(--primary); }
+.btn-outline-primary:hover { background: var(--primary); border-color: var(--primary); }
+.text-primary { color: var(--primary) !important; }
+.bg-primary { background: var(--primary) !important; }
+.border-primary { border-color: var(--primary) !important; }
+
+.badge-sale { background: var(--primary); color: #fff; font-size: .7rem; padding: 2px 8px; border-radius: 20px; }
+
+.product-card { transition: transform .2s, box-shadow .2s; border: none; border-radius: 16px; overflow: hidden; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(233,30,140,.13) !important; }
+.product-card img { height: 220px; object-fit: cover; width: 100%; }
+
+.star-filled { color: #ffc107; }
+.star-empty  { color: #dee2e6; }
+
+.navbar-brand span { color: var(--primary); font-weight: 700; }
+
+.hero-section { background: linear-gradient(135deg, var(--bg-soft) 0%, #f3e5f5 100%); }
+
+.sidebar-link.active { background: var(--primary-light); color: var(--primary); border-radius: 8px; }
+
+.cart-badge { background: var(--primary); color: #fff; font-size: .65rem; padding: 2px 6px; border-radius: 50%; position: absolute; top: -6px; right: -8px; min-width: 18px; text-align: center; }
+
+.order-status-pending     { background: #fff3cd; color: #664d03; }
+.order-status-confirmed   { background: #cff4fc; color: #055160; }
+.order-status-processing  { background: #d1ecf1; color: #0c5460; }
+.order-status-shipped     { background: #d4edda; color: #155724; }
+.order-status-delivered   { background: #c3e6cb; color: #155724; }
+.order-status-cancelled   { background: #f8d7da; color: #842029; }
+
+.page-hero { background: linear-gradient(120deg, var(--bg-soft), #e8d5f5); padding: 60px 0 40px; }
+
+input:focus, select:focus, textarea:focus { border-color: var(--primary) !important; box-shadow: 0 0 0 .2rem rgba(233,30,140,.15) !important; }
